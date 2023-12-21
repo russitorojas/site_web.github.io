@@ -1,0 +1,31 @@
+
+<?php
+    if(!empty($_POST["nom"]) && !empty($_POST["prenom"]) && !empty($_POST["date_n"])){
+        //ici
+        date_default_timezone_set('Europe/Paris');
+
+        include 'connexion.php';
+            
+        $nom=$_POST["nom"];
+        $prenom=$_POST["prenom"]; 
+        $date_n=$_POST["date_n"];
+        $date = date("Y-m-d");
+       
+        $query = "INSERT INTO `eleves` (nom, prenom, dateNaiss, dateInscription) VALUES ('$nom', '$prenom', '$date_n', '$date')";
+            
+        echo "<br>$query<br>"; // important echo a faire systematiquement, c'est impose !
+        
+        $result = mysqli_query($connect, $query); 
+        if (!$result){
+            echo "<br>pas bon".mysqli_error($connect);
+        }
+        
+        mysqli_close($connect);
+    }
+    else{
+        echo"error de saisie!!<br>";
+    }
+
+    
+?>
+

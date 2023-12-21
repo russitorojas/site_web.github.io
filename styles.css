@@ -1,0 +1,179 @@
+/*FRAMESET DE PAGE PRINCIPAL*/
+frame[name="menu"] {
+    background-color:#dbdfd6; /* Cambia el color de fondo del menú */
+    color: #fff; /* Cambia el color del texto del menú */
+}
+
+
+frame[name="accueil"] {
+	background-color: #FFFFF0 ;
+
+}
+
+frame[name="titre"]{
+	background-color: #252850;
+	border: none; 
+    padding: 10px; 
+  
+}
+
+
+/*TABLEAU POUR LE MENU*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+	font-size: 25px;
+}
+
+td{
+    padding: 10px;
+    text-align: left;
+    border: 2px solid white;
+	font-size: 25px;
+
+}
+
+a{
+	text-decoration:none;
+	font-family:Verdana, "Trebuchet MS", Arial;
+	font-weight:normal;
+	color: black;
+	font-size:22px;
+	
+}
+a:hover{	
+	text-decoration:none;
+	font-family:Verdana, "Trebuchet MS", Arial;
+	font-weight:normal;
+	color:#2f3261;
+	font-size:25px;
+}
+/*Autres tableus*/
+.tab {
+    width: 60%; 
+    margin: 20px auto; /* Espacio superior para separar de la parte superior de la página */
+    border-collapse: collapse;
+	
+}
+
+.td {
+    padding: 10px; /* Añade espacio interno a las celdas de la tabla */
+	font-size: 25px;
+}
+
+
+a:focus{
+	font-weight: bold;
+	color: #2f3261; 
+}
+
+/*TITRES*/
+h1{
+	font-family:Verdana, "Trebuchet MS", Arial;
+	font-weight:bold; 
+	font-size:70px; /*taille*/
+	color: #fff;
+	text-align:center;
+}
+
+h2{
+	font-family:Verdana, "Trebuchet MS", Arial;
+	font-weight:bold; /*gras*/
+	font-size:40px; /*taille*/
+	color:#252850;
+	text-align:center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+h3{
+	font-family: Verdana,"Trebuchet MS", Arial;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 25px;
+}
+
+
+
+body[name="menu"] {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana,"Trebuchet MS", Arial;
+	overflow: auto;
+	
+}
+
+.subtitle{
+	font-weight:bold;
+	font-family:Verdana, "Trebuchet MS", Arial;
+	font-size:30px;
+	text-align-last: center;
+	
+}
+div{
+	background-color: #252850;
+	color:white;
+	margin:0;
+}
+
+/*IMAGES*/
+img.logo{
+	float: right; 
+}
+
+img.images{
+	margin-top: 15px;
+	margin-left: 650px;
+}
+
+
+
+
+input[type="text"], input[type="date"] {
+
+    width: 100%; /* Ancho del campo de entrada al 100% */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+	font-size: 25px;
+}
+input[type="text"].special {
+
+    width: 50%; 
+    box-sizing: border-box; 
+	font-size: 25px;
+	
+}
+
+
+input[type="date"].special {
+
+    width: 50%; 
+    box-sizing: border-box; 
+	font-size: 25px;
+	
+}
+
+input[type="number"] {
+
+    width: 50%; 
+    box-sizing: border-box; 
+	font-size: 25px;
+}
+
+select{
+	width:40%;
+}
+
+
+input[type="submit"],input[type="reset"] {
+    margin: 10px auto; /* Espacio superior para separar de los campos de entrada */
+	font-size: 20px;
+}
+
+p{
+	font-size:25px ;
+	font-weight: bold;
+}
+label{
+	font-size: 25px;
+	font-weight: bold;
+}
