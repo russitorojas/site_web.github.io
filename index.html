@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <div>
+        <p class="subtitle" align="center">AJOUT D'UN ELEVE</p>
+    </div>
+    <body>
+        <form action="ajouter_eleve.php" method="POST">
+            <table class="tab">
+                <Tr> <!--ligne1-->
+                    <td class="td"> Nom: </td>
+                    <td class="td">
+                        <input type="text" name="nom">
+                    </td>
+                </Tr>
+                    
+                <Tr> <!--ligne2-->
+                    <td class="td">Prenom: </td>
+                    <td class="td">
+                        <input type="text" name="prenom">
+                    </td>
+                </Tr>
+
+                <Tr><!--ligne3-->
+                    <td class="td"> Date de naissance: </td>
+                    <td class="td">
+                        <label for="date_n"></label>
+                        <input type="date" id="date_n" name="date_n" min="1970-01-01">
+                    </td>
+                </Tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Envoyer" name="envoyer"  >
+                        <input type="reset" value="Reset"  >
+                    </td>
+                    
+                </tr>
+            </table>
+           
+        </form>
+    </body>
+</html>
